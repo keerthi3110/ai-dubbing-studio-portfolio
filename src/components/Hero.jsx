@@ -128,7 +128,7 @@ function Hero() {
             />
           </div>
           <div className="absolute -bottom-12 -left-12 p-8 bg-soft-blue w-48 h-48 flex items-center justify-center">
-            <span className="font-display-lg text-headline-md text-primary-blue italic">AI+Human</span>
+            <span className="font-display-lg text-headline-md text-primary-blue italic">Emotions, Intact.</span>
           </div>
         </div>
       </div>
