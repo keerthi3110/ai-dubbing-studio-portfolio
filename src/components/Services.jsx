@@ -4,19 +4,19 @@ import RevealOnScroll from './RevealOnScroll';
 
 function Services() {
   return (
-    <section className="py-section-gap bg-ink-black text-warm-white" aria-labelledby="services-heading">
+    <section className="py-section-gap bg-white text-dark-navy" aria-labelledby="services-heading">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="grid md:grid-cols-12 gap-gutter items-center mb-32">
           <RevealOnScroll className="md:col-span-7">
-            <span className="font-label-caps text-label-caps text-matcha-bg mb-6 block uppercase tracking-widest">
+            <span className="font-label-caps text-label-caps text-primary-blue mb-6 block uppercase tracking-widest">
               Our Ecosystem
             </span>
-            <h2 id="services-heading" className="font-display-lg text-headline-lg-mobile md:text-headline-lg leading-tight">
+            <h2 id="services-heading" className="font-display-lg text-headline-lg-mobile md:text-headline-lg text-dark-navy leading-tight">
               Elevating the Medium of Global Expression
             </h2>
           </RevealOnScroll>
           <RevealOnScroll delay={200} className="md:col-span-5 md:pl-12">
-            <p className="font-body-lg text-surface-variant">
+            <p className="font-body-lg text-body-text">
               Beyond dubbing, we orchestrate the entire sensory experience of your IP. Precision, scale, and
               soul—delivered through three core pillars of studio excellence.
             </p>
@@ -27,21 +27,21 @@ function Services() {
             <RevealOnScroll
               key={service.title}
               delay={service.delay}
-              className={`group border-t border-warm-white/10 py-12 hover:bg-deep-cabernet/20 transition-colors duration-500${service.hasBottomBorder ? ' border-b' : ''}`}
+              className={`group border-t border-border-gray py-12 hover:bg-soft-blue/30 transition-colors duration-500${service.hasBottomBorder ? ' border-b border-border-gray' : ''}`}
             >
               <div className="grid md:grid-cols-12 items-center gap-gutter">
-                <div className="md:col-span-1 font-display-lg text-headline-md text-warm-white/20 italic group-hover:text-matcha-bg transition-colors">
+                <div className="md:col-span-1 font-display-lg text-headline-md text-muted-text/30 italic group-hover:text-primary-blue transition-colors">
                   {service.numeral}
                 </div>
                 <div className="md:col-span-4">
-                  <h3 className="font-headline-md text-headline-md">{service.title}</h3>
+                  <h3 className="font-headline-md text-headline-md text-dark-navy">{service.title}</h3>
                 </div>
                 <div className="md:col-span-5">
-                  <p className="font-body-md text-surface-variant">{service.description}</p>
+                  <p className="font-body-md text-body-text">{service.description}</p>
                 </div>
                 <div className="md:col-span-2 text-right hidden md:block">
                   <MdArrowForward
-                    className="inline text-4xl text-warm-white/20 group-hover:text-warm-white transition-all transform group-hover:translate-x-2"
+                    className="inline text-4xl text-muted-text/30 group-hover:text-primary-blue transition-all transform group-hover:translate-x-2"
                     aria-hidden="true"
                   />
                 </div>

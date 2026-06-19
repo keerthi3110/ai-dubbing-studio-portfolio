@@ -61,6 +61,18 @@ export default {
         'deep-cabernet': '#4A1521',
         'champagne-silk': '#F3ECE0',
         'on-error': '#ffffff',
+        // Inka AI brand colors
+        'primary-blue': '#2563EB',
+        'primary-hover-blue': '#1D4ED8',
+        'dark-navy': '#0F172A',
+        'slate': '#1E293B',
+        'soft-blue': '#DBEAFE',
+        'off-white': '#F8FAFC',
+        'light-gray': '#F1F5F9',
+        'border-gray': '#CBD5E1',
+        'body-text': '#475569',
+        'muted-text': '#64748B',
+        'success-accent': '#10B981',
       },
       borderRadius: {
         DEFAULT: '0.125rem',
