@@ -1,16 +1,16 @@
 export const navLinks = [
-  { label: 'Categories', href: '#' },
-  { label: 'Capabilities', href: '#' },
-  { label: 'Philosophy', href: '#' },
-  { label: 'About', href: '#' },
-  { label: 'Contact', href: '#' },
+  { label: 'HOME', href: '#' },
+  { label: 'TOOLS', href: '#' },
+  { label: 'PRICING', href: '#' },
+  { label: 'PHILOSOPHY', href: '#' },
+  { label: 'CONTACT', href: '#' },
 ];
 
 export const footerNavigationLinks = [
-  { label: 'Categories', href: '#' },
-  { label: 'Capabilities', href: '#' },
-  { label: 'Philosophy', href: '#' },
-  { label: 'About', href: '#' },
+  { label: 'HOME', href: '#' },
+  { label: 'TOOLS', href: '#' },
+  { label: 'PRICING', href: '#' },
+  { label: 'PHILOSOPHY', href: '#' },
 ];
 
 export const footerCompanyLinks = [
