@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { MdSettingsVoice } from 'react-icons/md';
+import { MdLanguage, MdSettingsVoice } from 'react-icons/md';
 import { images } from '../constants/images';
 import { transcriptionLines } from '../data/transcription';
 import { useRevealOnScroll } from '../hooks/useRevealOnScroll';
@@ -65,9 +65,10 @@ function Hero() {
         <div className="md:col-span-8 z-10">
           <span
             ref={labelReveal.ref}
-            className={`font-label-caps text-label-caps text-primary-blue mb-6 block uppercase tracking-widest ${labelReveal.className}`}
+            className={`font-label-caps text-label-caps text-primary-blue mb-6 flex items-center gap-2 uppercase tracking-widest ${labelReveal.className}`}
             style={labelReveal.style}
           >
+            <MdLanguage className="text-lg text-primary-blue/80 animate-spin-slow" aria-hidden="true" />
             The Art of Localization
           </span>
           <h1
@@ -82,11 +83,19 @@ function Hero() {
             className={`bg-dark-navy p-8 md:p-12 w-full max-w-3xl ${transcriptionBoxReveal.className}`}
             style={transcriptionBoxReveal.style}
           >
-            <div className="flex items-center gap-4 mb-6 border-b border-white/10 pb-4">
-              <MdSettingsVoice className="text-primary-blue text-2xl" aria-hidden="true" />
-              <span className="font-label-caps text-label-caps text-white/40 uppercase tracking-widest">
-                Active Neural Dubbing Engine
-              </span>
+            <div className="flex items-center justify-between mb-6 border-b border-white/10 pb-4">
+              <div className="flex items-center gap-4">
+                <MdSettingsVoice className="text-primary-blue text-2xl animate-pulse" aria-hidden="true" />
+                <span className="font-label-caps text-label-caps text-white/40 uppercase tracking-widest">
+                  Active Neural Dubbing Engine
+                </span>
+              </div>
+              <div className="flex items-end gap-[3px] h-4" aria-hidden="true">
+                <span className="w-[2px] bg-primary-blue/60 rounded-full animate-soundbar-1" style={{ height: '60%' }}></span>
+                <span className="w-[2px] bg-primary-blue rounded-full animate-soundbar-2" style={{ height: '100%' }}></span>
+                <span className="w-[2px] bg-primary-blue/80 rounded-full animate-soundbar-3" style={{ height: '40%' }}></span>
+                <span className="w-[2px] bg-primary-blue/50 rounded-full animate-soundbar-4" style={{ height: '80%' }}></span>
+              </div>
             </div>
             <div className="space-y-4 font-display-lg text-headline-md italic leading-tight">
               {transcriptionLines.map((line, index) => (

@@ -1,6 +1,13 @@
+import { MdTranslate, MdAutoAwesome, MdLanguage } from 'react-icons/md';
 import { images } from '../constants/images';
 import { features, narrativeStats } from '../data/features';
 import RevealOnScroll from './RevealOnScroll';
+
+const featureIcons = {
+  '01.': <MdTranslate className="text-primary-blue text-3xl mb-4" aria-hidden="true" />,
+  '02.': <MdAutoAwesome className="text-primary-blue text-3xl mb-4" aria-hidden="true" />,
+  '03.': <MdLanguage className="text-primary-blue text-3xl mb-4" aria-hidden="true" />,
+};
 
 function Narrative() {
   return (
@@ -40,9 +47,12 @@ function Narrative() {
         <div className="grid md:grid-cols-3 gap-16 md:gap-gutter">
           {features.map((feature) => (
             <RevealOnScroll key={feature.number} delay={feature.delay} className="asymmetric-item">
-              <div className="font-display-lg text-headline-md text-primary-blue italic mb-6">{feature.number}</div>
-              <h3 className="font-headline-md text-headline-md text-white mb-4">{feature.title}</h3>
-              <p className="font-body-md text-border-gray">{feature.description}</p>
+              <div className="flex flex-col items-start">
+                {featureIcons[feature.number]}
+                <div className="font-display-lg text-headline-md text-primary-blue italic mb-6">{feature.number}</div>
+                <h3 className="font-headline-md text-headline-md text-white mb-4">{feature.title}</h3>
+                <p className="font-body-md text-border-gray">{feature.description}</p>
+              </div>
             </RevealOnScroll>
           ))}
         </div>

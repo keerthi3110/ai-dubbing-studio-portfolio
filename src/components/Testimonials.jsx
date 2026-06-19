@@ -40,10 +40,17 @@ function Testimonials() {
               className={`${testimonial.bgClass} p-10 md:p-14 flex flex-col justify-between`}
             >
               <div>
-                <MdFormatQuote
-                  className={`${testimonial.quoteIconClass} text-5xl mb-8`}
-                  aria-hidden="true"
-                />
+                <div className="flex justify-between items-start mb-8">
+                  <MdFormatQuote
+                    className={`${testimonial.quoteIconClass} text-5xl`}
+                    aria-hidden="true"
+                  />
+                  {testimonial.category && (
+                    <span className={`font-label-caps text-[10px] tracking-widest px-2.5 py-1 ${testimonial.bgClass.includes('bg-white') ? 'bg-primary-blue/5' : 'bg-white/20'} ${testimonial.roleClass} font-semibold uppercase`}>
+                      {testimonial.category}
+                    </span>
+                  )}
+                </div>
                 <blockquote className="font-body-lg text-body-lg italic mb-12">&ldquo;{testimonial.quote}&rdquo;</blockquote>
               </div>
               <div>

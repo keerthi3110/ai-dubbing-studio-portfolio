@@ -1,6 +1,12 @@
-import { MdArrowForward } from 'react-icons/md';
+import { MdArrowForward, MdMovie, MdSportsEsports, MdSettingsVoice } from 'react-icons/md';
 import { services } from '../data/services';
 import RevealOnScroll from './RevealOnScroll';
+
+const serviceIcons = {
+  'I.': <MdMovie className="text-3xl text-primary-blue mr-4 flex-shrink-0" aria-hidden="true" />,
+  'II.': <MdSportsEsports className="text-3xl text-primary-blue mr-4 flex-shrink-0" aria-hidden="true" />,
+  'III.': <MdSettingsVoice className="text-3xl text-primary-blue mr-4 flex-shrink-0" aria-hidden="true" />,
+};
 
 function Services() {
   return (
@@ -33,7 +39,8 @@ function Services() {
                 <div className="md:col-span-1 font-display-lg text-headline-md text-muted-text/30 italic group-hover:text-primary-blue transition-colors">
                   {service.numeral}
                 </div>
-                <div className="md:col-span-4">
+                <div className="md:col-span-4 flex items-center">
+                  {serviceIcons[service.numeral]}
                   <h3 className="font-headline-md text-headline-md text-dark-navy">{service.title}</h3>
                 </div>
                 <div className="md:col-span-5">
