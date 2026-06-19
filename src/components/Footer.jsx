@@ -32,7 +32,7 @@ function Footer() {
     <footer className="w-full pt-section-gap pb-12 bg-deep-forest dark:bg-on-background border-t border-on-surface-variant/20">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="md:col-span-5">
-          <div className="font-display-lg text-headline-md text-matcha-bg italic mb-8">Vox &amp; Vision</div>
+          <div className="font-display-lg text-headline-md text-matcha-bg italic mb-8">Inkaai</div>
           <p className="text-surface-variant font-body-md max-w-xs mb-8">
             Precision Dubbing for Global Cinema. Where technology meets the soul of the screen.
           </p>
@@ -55,7 +55,7 @@ function Footer() {
             ))}
           </ul>
           <div className="text-matcha-bg font-body-md">
-            &copy; 2024 Vox &amp; Vision. Precision Dubbing for Global Cinema.
+            &copy; 2024 Inkaai. Precision Dubbing for Global Cinema.
           </div>
         </div>
       </div>
