@@ -16,11 +16,10 @@ function Narrative() {
         <div className="grid md:grid-cols-12 gap-gutter mb-24 items-start">
           <RevealOnScroll className="md:col-span-5">
             <h2 className="font-display-lg text-headline-lg text-white italic leading-none mb-12">
-              Architects of Narrative
+              The Soul of Your Performance
             </h2>
             <p className="font-body-lg text-body-lg text-border-gray max-w-md">
-              We don&apos;t just replace voices; we re-sculpt the auditory landscape of cinema. Our team blends
-              linguistic mastery with algorithmic precision to ensure your story feels native in every language.
+              We believe translation shouldn&apos;t strip your personality. InkaAI preserves your emotional nuance, vocal cadence, and unique identity so you always sound like yourself in every regional language.
             </p>
           </RevealOnScroll>
           <RevealOnScroll delay={200} className="md:col-span-7 flex justify-end">

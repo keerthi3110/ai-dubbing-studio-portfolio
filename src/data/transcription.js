@@ -1,6 +1,6 @@
 export const transcriptionLines = [
-  { text: '"The soul of cinema...', delay: 0, initialActive: true },
-  { text: "isn't found in translation...", delay: 400, initialActive: true },
-  { text: 'but in the resonance...', delay: 800, initialActive: false },
-  { text: 'of a shared human truth."', delay: 1200, initialActive: false },
+  { text: '"Your voice, preserved...', delay: 0, initialActive: true },
+  { text: "your essence, untouched...", delay: 400, initialActive: true },
+  { text: 'now speaking to millions...', delay: 800, initialActive: false },
+  { text: 'in their own tongue."', delay: 1200, initialActive: false },
 ];

@@ -1,34 +1,34 @@
 export const features = [
   {
     number: '01.',
-    title: 'Crafting Resonance in Every Frame',
+    title: 'Emotional Voice Clones',
     description:
-      "Our methodology begins with the script's subtext. We translate the feeling, not just the words, ensuring the director's original vision remains uncompromised across borders.",
+      "Our platform captures the precise emotional contours of your original voice, mapping tone, warmth, and expression to sound like you in every language.",
     delay: 0,
   },
   {
     number: '02.',
-    title: 'The Alchemy of Sound & Soul',
+    title: 'Culturally Fluent Nuance',
     description:
-      'By leveraging proprietary AI that understands emotional cadence, we provide a foundation that human performers elevate to masterpieces of vocal performance.',
+      "We localize idioms, jokes, and cultural context rather than performing word-for-word translations, ensuring your story hits home.",
     delay: 150,
   },
   {
     number: '03.',
-    title: 'Global Reach, Local Depth',
+    title: 'Scale with Human Refinement',
     description:
-      'From boutique indie features to global streaming phenomena, our studio provides the scale of technology with the intimacy of a craft-driven house.',
+      "We combine high-performance AI models with human validation to deliver cinema-grade dubs that feel natural and authentic.",
     delay: 300,
   },
 ];
 
 export const narrativeStats = [
   {
-    label: 'PRECISION',
-    value: 'Sub-frame sync accuracy',
+    label: 'AUTHENTICITY',
+    value: 'Vocal identity preserved',
   },
   {
-    label: 'EMOTION',
-    value: 'Tone-matched frequency response',
+    label: 'RESONANCE',
+    value: 'True emotional translation',
   },
 ];

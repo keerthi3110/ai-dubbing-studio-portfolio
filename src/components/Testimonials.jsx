@@ -9,10 +9,10 @@ function Testimonials() {
         <RevealOnScroll className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
             <span className="font-label-caps text-label-caps text-primary-blue mb-6 block uppercase tracking-widest">
-              Client Testimonials
+              Creator Success Stories
             </span>
             <h2 id="testimonials-heading" className="font-display-lg text-headline-lg-mobile md:text-headline-lg text-dark-navy italic">
-              Perspectives from The Room
+              Stories of Growth & Connection
             </h2>
           </div>
           <div className="flex gap-4" role="group" aria-label="Testimonial navigation">
@@ -51,9 +51,21 @@ function Testimonials() {
                     </span>
                   )}
                 </div>
-                <blockquote className="font-body-lg text-body-lg italic mb-12">&ldquo;{testimonial.quote}&rdquo;</blockquote>
+                <blockquote className="font-body-lg text-body-lg mb-12">
+                  {testimonial.headline && (
+                    <strong className="block not-italic font-bold text-dark-navy mb-3">&ldquo;{testimonial.headline}&rdquo;</strong>
+                  )}
+                  <span className="italic block text-body-text/80">&ldquo;{testimonial.quote}&rdquo;</span>
+                </blockquote>
               </div>
               <div>
+                {testimonial.rating && (
+                  <div className={`flex gap-[2px] mb-3 ${testimonial.roleClass} text-sm`} aria-label={`${testimonial.rating} star rating`}>
+                    {Array.from({ length: testimonial.rating }).map((_, i) => (
+                      <span key={i}>★</span>
+                    ))}
+                  </div>
+                )}
                 <div className={`font-label-caps text-label-caps ${testimonial.roleClass} uppercase mb-1`}>
                   {testimonial.role}
                 </div>

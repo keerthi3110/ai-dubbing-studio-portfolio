@@ -10,7 +10,7 @@ function Navbar() {
     >
       <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
         <div className="font-display-lg text-display-lg-mobile md:text-headline-md text-dark-navy dark:text-white italic">
-          Inkaai
+          InkaAI
         </div>
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
@@ -22,7 +22,7 @@ function Navbar() {
         <button
           type="button"
           className="group/nav-btn font-button text-button uppercase tracking-widest bg-primary-blue text-white px-8 py-3 hover:bg-primary-hover-blue transition-colors duration-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2 flex items-center gap-2"
-          aria-label="Get started with Inkaai"
+          aria-label="Get started with InkaAI"
         >
           <span>Get Started</span>
           <MdArrowForward className="text-base group-hover/nav-btn:translate-x-1 transition-transform duration-300" />

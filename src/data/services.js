@@ -1,23 +1,23 @@
 export const services = [
   {
     numeral: 'I.',
-    title: 'Creative Campaigns',
+    title: 'AI Dubbing',
     description:
-      'Bespoke marketing localized for impact. We adapt trailers and digital content that resonate with cultural nuance and market-specific sentiment.',
+      'High-fidelity, multilingual voice matching that keeps your original performance. Speak to audiences in Hindi, Tamil, Telugu, Bengali, and more.',
     delay: 0,
   },
   {
     numeral: 'II.',
-    title: 'Digital Experiences',
+    title: 'Voice Preservation',
     description:
-      'Interactive storytelling localized for gaming and immersive platforms. Maintaining immersion through low-latency audio delivery and high-fidelity textures.',
+      'Build your own digital voice vault. Our engine locks in your voice profile, cadence, and unique personality, securing your voice identity.',
     delay: 100,
   },
   {
     numeral: 'III.',
-    title: 'Media Production',
+    title: 'Content Expansion',
     description:
-      'End-to-end cinema-grade dubbing, from casting and script adaptation to final Atmos mix. The gold standard for global cinema distribution.',
+      "Upload once and automatically adapt your formats for India's diverse regions. Scale your vlogs, podcasts, or educational channels seamlessly.",
     delay: 200,
     hasBottomBorder: true,
   },

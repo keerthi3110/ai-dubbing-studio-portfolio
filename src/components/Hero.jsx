@@ -69,14 +69,14 @@ function Hero() {
             style={labelReveal.style}
           >
             <MdLanguage className="text-lg text-primary-blue/80 animate-spin-slow" aria-hidden="true" />
-            The Art of Localization
+            Your Voice, Without Borders
           </span>
           <h1
             ref={headlineReveal.ref}
             className={`font-display-lg text-display-lg-mobile md:text-display-lg text-dark-navy mb-12 ${headlineReveal.className}`}
             style={headlineReveal.style}
           >
-            Stories Without Borders
+            One Video. Every Indian Language.
           </h1>
           <div
             ref={transcriptionBoxReveal.ref}
@@ -87,7 +87,7 @@ function Hero() {
               <div className="flex items-center gap-4">
                 <MdSettingsVoice className="text-primary-blue text-2xl animate-pulse" aria-hidden="true" />
                 <span className="font-label-caps text-label-caps text-white/40 uppercase tracking-widest">
-                  Active Neural Dubbing Engine
+                  Vocal Identity Engine
                 </span>
               </div>
               <div className="flex items-end gap-[3px] h-4" aria-hidden="true">
@@ -128,7 +128,7 @@ function Hero() {
             />
           </div>
           <div className="absolute -bottom-12 -left-12 p-8 bg-soft-blue w-48 h-48 flex items-center justify-center">
-            <span className="font-display-lg text-headline-md text-primary-blue italic">24fps</span>
+            <span className="font-display-lg text-headline-md text-primary-blue italic">AI+Human</span>
           </div>
         </div>
       </div>

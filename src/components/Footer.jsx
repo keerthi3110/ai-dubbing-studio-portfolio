@@ -32,9 +32,9 @@ function Footer() {
     <footer className="w-full pt-section-gap pb-12 bg-dark-navy border-t border-slate-800">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="md:col-span-5">
-          <div className="font-display-lg text-headline-md text-primary-blue italic mb-8">Inkaai</div>
+          <div className="font-display-lg text-headline-md text-primary-blue italic mb-8">InkaAI</div>
           <p className="text-border-gray font-body-md max-w-xs mb-8">
-            Precision Dubbing for Global Cinema. Where technology meets the soul of the screen.
+            Scale your stories across India&apos;s local languages. Preserving emotional resonance, vocal signatures, and human connection.
           </p>
         </div>
         <div className="md:col-span-2">
@@ -55,7 +55,7 @@ function Footer() {
             ))}
           </ul>
           <div className="text-muted-text font-body-md">
-            &copy; 2024 Inkaai. Precision Dubbing for Global Cinema.
+            &copy; 2024 InkaAI. Voices without borders.
           </div>
         </div>
       </div>

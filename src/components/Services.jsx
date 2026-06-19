@@ -15,16 +15,15 @@ function Services() {
         <div className="grid md:grid-cols-12 gap-gutter items-center mb-32">
           <RevealOnScroll className="md:col-span-7">
             <span className="font-label-caps text-label-caps text-primary-blue mb-6 block uppercase tracking-widest">
-              Our Ecosystem
+              Our Capabilities
             </span>
             <h2 id="services-heading" className="font-display-lg text-headline-lg-mobile md:text-headline-lg text-dark-navy leading-tight">
-              Elevating the Medium of Global Expression
+              Expand Your Audience, Preserve Your Identity
             </h2>
           </RevealOnScroll>
           <RevealOnScroll delay={200} className="md:col-span-5 md:pl-12">
             <p className="font-body-lg text-body-text">
-              Beyond dubbing, we orchestrate the entire sensory experience of your IP. Precision, scale, and
-              soul—delivered through three core pillars of studio excellence.
+              Connect with millions of new viewers across India&apos;s language spectrum. Scale your content natively with our specialized creator ecosystem.
             </p>
           </RevealOnScroll>
         </div>

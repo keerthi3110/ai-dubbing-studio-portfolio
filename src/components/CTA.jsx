@@ -6,15 +6,15 @@ function CTA() {
     <section className="py-section-gap bg-soft-blue text-center" aria-labelledby="cta-heading">
       <RevealOnScroll className="max-w-3xl mx-auto px-margin-mobile">
         <h2 id="cta-heading" className="font-display-lg text-headline-lg-mobile md:text-headline-lg text-dark-navy mb-12 italic leading-tight">
-          Ready to transcend the linguistic frame?
+          Ready to speak to 1.2 billion hearts?
         </h2>
         <button
           type="button"
           className="group relative overflow-hidden bg-primary-blue text-white px-12 py-6 font-button text-button uppercase tracking-widest transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2"
-          aria-label="Start your production with Vox and Vision"
+          aria-label="Claim your voice demo with InkaAI"
         >
           <span className="relative z-10 flex items-center justify-center gap-2 mx-auto">
-            Start Your Production
+            Claim Your Voice Demo
             <MdArrowForward className="text-lg group-hover:translate-x-1 transition-transform duration-300" />
           </span>
           <div className="absolute inset-0 bg-primary-hover-blue translate-y-full group-hover:translate-y-0 transition-transform duration-500 cubic-bezier(0.2, 1, 0.3, 1)" />
