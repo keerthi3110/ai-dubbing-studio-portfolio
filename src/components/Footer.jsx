@@ -29,7 +29,7 @@ function FooterLinkList({ links }) {
 
 function Footer() {
   return (
-    <footer className="w-full pt-section-gap pb-12 bg-dark-navy border-t border-slate-800">
+    <footer id="contact" className="w-full pt-section-gap pb-12 bg-dark-navy border-t border-slate-800">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="md:col-span-5">
           <div className="font-display-lg text-headline-md text-primary-blue italic mb-8">InkaAI</div>

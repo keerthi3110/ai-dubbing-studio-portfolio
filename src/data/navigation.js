@@ -3,7 +3,7 @@ export const navLinks = [
   { label: 'PHILOSOPHY', href: '#philosophy' },
   { label: 'PRICING', href: '#pricing' },
   { label: 'TOOLS', href: '#tools' },
-  { label: 'CONTACT', href: '#' },
+  { label: 'CONTACT', href: '#contact' },
 ];
 
 export const footerNavigationLinks = [
