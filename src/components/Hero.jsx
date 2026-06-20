@@ -60,7 +60,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center pt-32 overflow-hidden bg-off-white">
+    <section id="home" className="relative min-h-screen flex items-center pt-32 overflow-hidden bg-off-white">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid md:grid-cols-12 items-end gap-gutter">
         <div className="md:col-span-8 z-10">
           <span
