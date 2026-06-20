@@ -55,7 +55,7 @@ function Footer() {
             ))}
           </ul>
           <div className="text-muted-text font-body-md">
-            &copy; 2024 InkaAI. Voices without borders.
+            &copy; 2026 InkaAI. Voices without borders.
           </div>
         </div>
       </div>

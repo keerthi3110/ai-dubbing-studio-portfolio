@@ -7,10 +7,10 @@ export const navLinks = [
 ];
 
 export const footerNavigationLinks = [
-  { label: 'HOME', href: '#' },
-  { label: 'TOOLS', href: '#' },
-  { label: 'PRICING', href: '#' },
-  { label: 'PHILOSOPHY', href: '#' },
+  { label: 'HOME', href: '#home' },
+  { label: 'TOOLS', href: '#tools' },
+  { label: 'PRICING', href: '#pricing' },
+  { label: 'PHILOSOPHY', href: '#philosophy' },
 ];
 
 export const footerCompanyLinks = [
