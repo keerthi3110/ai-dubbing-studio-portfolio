@@ -5,12 +5,16 @@ import {
 } from '../data/navigation';
 
 function FooterLink({ href, children }) {
+  const formattedChildren = typeof children === 'string' && children === children.toUpperCase()
+    ? children.charAt(0).toUpperCase() + children.slice(1).toLowerCase()
+    : children;
+
   return (
     <a
       href={href}
-      className="text-border-gray hover:text-primary-blue transition-colors duration-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2 focus-visible:ring-offset-dark-navy"
+      className="font-body-md text-[16px] font-medium leading-[1.5] text-border-gray hover:text-primary-blue transition-colors duration-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2 focus-visible:ring-offset-dark-navy"
     >
-      {children}
+      {formattedChildren}
     </a>
   );
 }
@@ -38,15 +42,15 @@ function Footer() {
           </p>
         </div>
         <div className="md:col-span-2">
-          <h4 className="font-label-caps text-label-caps text-white mb-6 uppercase tracking-widest">Navigation</h4>
+          <h4 className="font-label-caps text-[18px] font-semibold text-white mb-6 tracking-wide">Navigation</h4>
           <FooterLinkList links={footerNavigationLinks} />
         </div>
         <div className="md:col-span-2">
-          <h4 className="font-label-caps text-label-caps text-white mb-6 uppercase tracking-widest">Company</h4>
+          <h4 className="font-label-caps text-[18px] font-semibold text-white mb-6 tracking-wide">Company</h4>
           <FooterLinkList links={footerCompanyLinks} />
         </div>
         <div className="md:col-span-3">
-          <h4 className="font-label-caps text-label-caps text-white mb-6 uppercase tracking-widest">Connect</h4>
+          <h4 className="font-label-caps text-[18px] font-semibold text-white mb-6 tracking-wide">Connect</h4>
           <ul className="space-y-4 mb-12">
             {footerConnectLinks.map((link) => (
               <li key={link.label}>
@@ -54,7 +58,7 @@ function Footer() {
               </li>
             ))}
           </ul>
-          <div className="text-muted-text font-body-md">
+          <div className="text-muted-text font-body-md text-[13px] leading-[1.4]">
             &copy; 2026 InkaAI. Voices without borders.
           </div>
         </div>
