@@ -1,4 +1,4 @@
-import { MdArrowForward, MdMovie, MdSportsEsports, MdSettingsVoice } from 'react-icons/md';
+import { MdMovie, MdSportsEsports, MdSettingsVoice } from 'react-icons/md';
 import { services } from '../data/services';
 import RevealOnScroll from './RevealOnScroll';
 
@@ -45,12 +45,7 @@ function Services() {
                 <div className="md:col-span-5">
                   <p className="font-body-md text-body-text">{service.description}</p>
                 </div>
-                <div className="md:col-span-2 text-right hidden md:block">
-                  <MdArrowForward
-                    className="inline text-4xl text-muted-text/30 group-hover:text-primary-blue transition-all transform group-hover:translate-x-2"
-                    aria-hidden="true"
-                  />
-                </div>
+                <div className="md:col-span-2 text-right hidden md:block" />
               </div>
             </RevealOnScroll>
           ))}
