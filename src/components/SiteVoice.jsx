@@ -19,15 +19,15 @@ function SiteVoice() {
             <p className="font-body-lg text-body-lg text-body-text mb-8">
               One line of code. Your blog posts become multilingual audio — instantly. Works on WordPress, Shopify, or any website.
             </p>
-            <a
+            {/* <a
               href="https://inkaai.com/dashboard"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 font-button text-button uppercase tracking-widest text-primary-blue hover:text-primary-hover-blue transition-colors duration-200"
               aria-label="Go to My Dashboard"
             >
-              <span>My Dashboard →</span>
-            </a>
+              <span>My Dashboard ll→</span>
+            </a> */}
           </RevealOnScroll>
         </div>
 

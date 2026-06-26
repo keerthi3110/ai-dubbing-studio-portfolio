@@ -10,7 +10,7 @@ function ToolsDropdown() {
   const isTouchRef = useRef(false);
 
   const dropdownItems = [
-    { label: 'SiteVoice', href: 'https://inkaai.com/sitevoice' },
+    { label: 'SiteVoice', href: '#sitevoice', local: true },
     { label: 'Comment Analyzer', href: 'https://inkaai.com/comment-analyzer' },
     { label: 'Reach Calculator', href: 'https://inkaai.com/reach-calculator' },
   ];
@@ -141,19 +141,51 @@ function ToolsDropdown() {
         }`}
       >
         <div className="rounded-xl bg-white dark:bg-dark-navy border border-slate-100 dark:border-slate-800/80 shadow-lg py-1">
-          {dropdownItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              role="menuitem"
-              onClick={() => setIsOpen(false)}
-              className="block px-6 py-3.5 font-button text-button uppercase tracking-widest text-body-text dark:text-muted-text hover:text-primary-blue hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors duration-200 first:rounded-t-xl last:rounded-b-xl"
-            >
-              {item.label}
-            </a>
-          ))}
+          {dropdownItems.map((item) => {
+            if (item.local) {
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  role="menuitem"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    const target = document.getElementById('sitevoice');
+                    if (target) {
+                      const navbar = document.querySelector('nav');
+                      const navbarHeight = navbar ? navbar.offsetHeight : 80;
+                      const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                      const offsetPosition = elementPosition - navbarHeight;
+                      const currentScroll = window.pageYOffset;
+                      if (Math.abs(currentScroll - offsetPosition) > 5) {
+                        window.scrollTo({
+                          top: offsetPosition,
+                          behavior: 'smooth',
+                        });
+                      }
+                    }
+                  }}
+                  className="block px-6 py-3.5 font-button text-button uppercase tracking-widest text-body-text dark:text-muted-text hover:text-primary-blue hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors duration-200 first:rounded-t-xl last:rounded-b-xl"
+                >
+                  {item.label}
+                </a>
+              );
+            }
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                role="menuitem"
+                onClick={() => setIsOpen(false)}
+                className="block px-6 py-3.5 font-button text-button uppercase tracking-widest text-body-text dark:text-muted-text hover:text-primary-blue hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors duration-200 first:rounded-t-xl last:rounded-b-xl"
+              >
+                {item.label}
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>
