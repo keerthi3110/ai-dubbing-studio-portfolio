@@ -1,5 +1,6 @@
 import { MdArrowForward } from 'react-icons/md';
 import NavLink from './NavLink';
+import ToolsDropdown from './ToolsDropdown';
 import { navLinks } from '../data/navigation';
 
 function Navbar() {
@@ -13,11 +14,16 @@ function Navbar() {
           InkaAI
         </div>
         <div className="hidden md:flex items-center gap-10">
-          {navLinks.map((link) => (
-            <NavLink key={link.label} href={link.href}>
-              {link.label}
-            </NavLink>
-          ))}
+          {navLinks.map((link) => {
+            if (link.label === 'TOOLS') {
+              return <ToolsDropdown key={link.label} />;
+            }
+            return (
+              <NavLink key={link.label} href={link.href}>
+                {link.label}
+              </NavLink>
+            );
+          })}
         </div>
         <button
           type="button"

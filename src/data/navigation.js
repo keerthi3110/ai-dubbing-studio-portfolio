@@ -20,6 +20,8 @@ export const footerCompanyLinks = [
 ];
 
 export const footerConnectLinks = [
-  { label: 'Instagram', href: '#' },
+  { label: 'social@inkaai.com', href: 'mailto:social@inkaai.com' },
+  { label: 'adithya@inkaai.com', href: 'mailto:adithya@inkaai.com' },
   { label: 'LinkedIn', href: '#' },
+  { label: 'Instagram', href: '#' },
 ];
