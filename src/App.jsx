@@ -5,6 +5,7 @@ import Services from './components/Services';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import CTA from './components/CTA';
+import SiteVoice from './components/SiteVoice';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Testimonials />
         <Pricing />
         <CTA />
+        <SiteVoice />
       </main>
       <Footer />
     </>
