@@ -183,14 +183,15 @@ function Pricing({ openSignIn }) {
               Additional rendering may consume credits depending on plan.
             </p>
           </div>
-          <button
-            onClick={openSignIn}
-            type="button"
+          <a
+            href="https://buy.stripe.com/4gM7sM7Fp5kJ17m7kJ2cg0d"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-5 font-button text-button uppercase tracking-widest bg-primary-blue text-white hover:bg-primary-hover-blue transition-all duration-[250ms] ease-in-out hover:scale-[1.02] whitespace-nowrap w-full md:w-auto text-center block"
             aria-label="Buy unlimited audio editor access"
           >
             BUY EDITOR ACCESS
-          </button>
+          </a>
         </RevealOnScroll>
       </div>
     </section>
