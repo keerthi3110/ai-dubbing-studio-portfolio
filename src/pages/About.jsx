@@ -510,7 +510,7 @@ function About() {
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
-              href="https://inkaai.com/"
+              href="https://inkaai.com/studio"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative overflow-hidden bg-primary-blue text-white px-12 py-6 font-button text-button uppercase tracking-widest transition-all hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2 w-full sm:w-auto block text-center"
