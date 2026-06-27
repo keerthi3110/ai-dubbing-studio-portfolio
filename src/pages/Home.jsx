@@ -6,14 +6,14 @@ import Pricing from "../components/Pricing";
 import CTA from "../components/CTA";
 import SiteVoice from "../components/SiteVoice";
 
-function Home() {
+function Home({ openSignIn }) {
     return (
         <main>
             <Hero />
             <Narrative />
             <Services />
             <Testimonials />
-            <Pricing />
+            <Pricing openSignIn={openSignIn} />
             <CTA />
             <SiteVoice />
         </main>

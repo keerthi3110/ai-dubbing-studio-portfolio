@@ -1,6 +1,6 @@
 import RevealOnScroll from './RevealOnScroll';
 
-function Pricing() {
+function Pricing({ openSignIn }) {
   return (
     <section id="pricing" className="py-24 md:py-[100px] md:pt-[120px] md:pb-[100px] bg-[#F7F7F7]" aria-labelledby="pricing-heading">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
@@ -54,6 +54,7 @@ function Pricing() {
                 </span>
               </div>
               <button
+                onClick={openSignIn}
                 type="button"
                 className="w-full text-center py-4 font-button text-button uppercase tracking-widest border border-primary-blue text-primary-blue bg-white hover:bg-primary-blue hover:text-white transition-all duration-[250ms] ease-in-out hover:scale-[1.02] block"
                 aria-label="Start standard free plan"
@@ -89,6 +90,7 @@ function Pricing() {
                 </span>
               </div>
               <button
+                onClick={openSignIn}
                 type="button"
                 className="w-full text-center py-4 font-button text-button uppercase tracking-widest bg-primary-blue text-white hover:bg-primary-hover-blue transition-all duration-[250ms] ease-in-out hover:scale-[1.02] block"
                 aria-label="Choose creator subscription plan"
@@ -121,6 +123,7 @@ function Pricing() {
                 </span>
               </div>
               <button
+                onClick={openSignIn}
                 type="button"
                 className="w-full text-center py-4 font-button text-button uppercase tracking-widest border border-primary-blue text-primary-blue bg-white hover:bg-primary-blue hover:text-white transition-all duration-[250ms] ease-in-out hover:scale-[1.02] block"
                 aria-label="Choose pro subscription plan"
@@ -153,6 +156,7 @@ function Pricing() {
                 </span>
               </div>
               <button
+                onClick={openSignIn}
                 type="button"
                 className="w-full text-center py-4 font-button text-button uppercase tracking-widest border border-primary-blue text-primary-blue bg-white hover:bg-primary-blue hover:text-white transition-all duration-[250ms] ease-in-out hover:scale-[1.02] block"
                 aria-label="Contact sales for volume enterprise scale plan"
@@ -179,15 +183,14 @@ function Pricing() {
               Additional rendering may consume credits depending on plan.
             </p>
           </div>
-          <a
-            href="https://buy.stripe.com/4gM7sM7Fp5kJ17m7kJ2cg0d"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={openSignIn}
+            type="button"
             className="px-8 py-5 font-button text-button uppercase tracking-widest bg-primary-blue text-white hover:bg-primary-hover-blue transition-all duration-[250ms] ease-in-out hover:scale-[1.02] whitespace-nowrap w-full md:w-auto text-center block"
             aria-label="Buy unlimited audio editor access"
           >
             BUY EDITOR ACCESS
-          </a>
+          </button>
         </RevealOnScroll>
       </div>
     </section>
