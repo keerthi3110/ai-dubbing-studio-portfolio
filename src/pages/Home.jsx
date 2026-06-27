@@ -4,6 +4,7 @@ import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
 import CTA from "../components/CTA";
+import SiteVoice from "../components/SiteVoice";
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <Testimonials />
             <Pricing />
             <CTA />
+            <SiteVoice />
         </main>
     );
 }

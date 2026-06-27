@@ -1,28 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Narrative from './components/Narrative';
-import Services from './components/Services';
-import Testimonials from './components/Testimonials';
-import Pricing from './components/Pricing';
-import CTA from './components/CTA';
-import SiteVoice from './components/SiteVoice';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <main>
-        <Hero />
-        <Narrative />
-        <Services />
-        <Testimonials />
-        <Pricing />
-        <CTA />
-        <SiteVoice />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 

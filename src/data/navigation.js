@@ -1,16 +1,17 @@
 export const navLinks = [
-  { label: 'HOME', href: '#home' },
-  { label: 'PHILOSOPHY', href: '#philosophy' },
-  { label: 'PRICING', href: '#pricing' },
+  { label: 'HOME', href: '/#home' },
   { label: 'TOOLS', href: '#tools' },
-  { label: 'CONTACT', href: '#contact' },
+  { label: 'PRICING', href: '/#pricing' },
+  { label: 'PHILOSOPHY', href: '/#philosophy' },
+  { label: 'CONTACT', href: '/contact', isRoute: true },
+  { label: 'ABOUT US', href: '/about', isRoute: true },
 ];
 
 export const footerNavigationLinks = [
-  { label: 'HOME', href: '#home' },
-  { label: 'TOOLS', href: '#tools' },
-  { label: 'PRICING', href: '#pricing' },
-  { label: 'PHILOSOPHY', href: '#philosophy' },
+  { label: 'HOME', href: '/#home' },
+  { label: 'TOOLS', href: '/#tools' },
+  { label: 'PRICING', href: '/#pricing' },
+  { label: 'PHILOSOPHY', href: '/#philosophy' },
 ];
 
 export const footerCompanyLinks = [
