@@ -47,14 +47,16 @@ function Navbar() {
             );
           })}
         </div>
-        <button
-          type="button"
+        <a
+          href="https://inkaai.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group/nav-btn font-button text-button uppercase tracking-widest bg-primary-blue text-white px-8 py-3 hover:bg-primary-hover-blue transition-colors duration-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2 flex items-center gap-2"
           aria-label="Get started with InkaAI"
         >
           <span>Get Started</span>
           <MdArrowForward className="text-base group-hover/nav-btn:translate-x-1 transition-transform duration-300" />
-        </button>
+        </a>
       </div>
     </nav>
   );
