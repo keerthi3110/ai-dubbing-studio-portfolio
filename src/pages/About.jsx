@@ -521,12 +521,6 @@ function About() {
               </span>
               <div className="absolute inset-0 bg-primary-hover-blue translate-y-full group-hover:translate-y-0 transition-transform duration-500 cubic-bezier(0.2, 1, 0.3, 1)" />
             </a>
-            <a
-              href="mailto:demo@inkaai.com"
-              className="px-12 py-6 font-button text-button uppercase tracking-widest border border-primary-blue text-primary-blue bg-white hover:bg-slate-50 dark:bg-transparent dark:hover:bg-slate/10 transition-all hover:scale-[1.02] w-full sm:w-auto block text-center"
-            >
-              Book Studio Demo
-            </a>
           </div>
         </RevealOnScroll>
       </section>
