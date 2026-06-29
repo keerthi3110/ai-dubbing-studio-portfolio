@@ -140,10 +140,10 @@ function Pricing({ openSignIn }) {
                 SCALE
               </span>
               <div className="font-display-lg text-headline-lg text-dark-navy mb-4 font-bold leading-tight">
-                Talk to us
+                Reach out
               </div>
               <p className="font-body-md text-body-text">
-                Volume pricing.<br />API access. White label.
+                Adithya Balasubramanium
               </p>
             </div>
             <div>
@@ -151,18 +151,20 @@ function Pricing({ openSignIn }) {
                 <span className="font-label-caps text-[11px] text-muted-text tracking-widest uppercase block mb-1">
                   Reach out
                 </span>
-                <span className="font-headline-md text-xl text-dark-navy font-semibold">
-                  Enterprise rates
-                </span>
+                <a
+                  href="mailto:adithya@inkaai.com"
+                  className="font-headline-md text-base md:text-lg text-primary-blue hover:underline font-semibold block break-all"
+                >
+                  adithya@inkaai.com
+                </a>
               </div>
-              <button
-                onClick={openSignIn}
-                type="button"
+              <a
+                href="mailto:adithya@inkaai.com"
                 className="w-full text-center py-4 font-button text-button uppercase tracking-widest border border-primary-blue text-primary-blue bg-white hover:bg-primary-blue hover:text-white transition-all duration-[250ms] ease-in-out hover:scale-[1.02] block"
-                aria-label="Contact sales for volume enterprise scale plan"
+                aria-label="Email Adithya Balasubramanium for enterprise scale plan"
               >
-                CONTACT SALES
-              </button>
+                EMAIL ADITHYA
+              </a>
             </div>
           </RevealOnScroll>
         </div>
