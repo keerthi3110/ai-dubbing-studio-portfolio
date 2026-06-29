@@ -1,6 +1,6 @@
 import RevealOnScroll from './RevealOnScroll';
 
-function SiteVoice() {
+function SiteVoice({ openSignIn }) {
   return (
     <section id="sitevoice" className="py-24 md:py-[120px] bg-white text-dark-navy border-t border-border-gray/20" aria-labelledby="sitevoice-heading">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
@@ -119,6 +119,7 @@ function SiteVoice() {
               </ul>
             </div>
             <button
+              onClick={openSignIn}
               type="button"
               className="w-full text-center py-4 font-button text-button uppercase tracking-widest border border-primary-blue text-primary-blue bg-white hover:bg-primary-blue hover:text-white transition-all duration-[250ms] ease-in-out hover:scale-[1.02] block"
               aria-label="Start Free Trial"
@@ -163,6 +164,7 @@ function SiteVoice() {
               </ul>
             </div>
             <button
+              onClick={openSignIn}
               type="button"
               className="w-full text-center py-4 font-button text-button uppercase tracking-widest bg-primary-blue text-white hover:bg-primary-hover-blue transition-all duration-[250ms] ease-in-out hover:scale-[1.02] block"
               aria-label="Choose Starter Plan"
@@ -204,6 +206,7 @@ function SiteVoice() {
               </ul>
             </div>
             <button
+              onClick={openSignIn}
               type="button"
               className="w-full text-center py-4 font-button text-button uppercase tracking-widest border border-primary-blue text-primary-blue bg-white hover:bg-primary-blue hover:text-white transition-all duration-[250ms] ease-in-out hover:scale-[1.02] block"
               aria-label="Choose Pro Plan"

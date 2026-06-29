@@ -15,7 +15,7 @@ function Home({ openSignIn }) {
             <Testimonials />
             <Pricing openSignIn={openSignIn} />
             <CTA />
-            <SiteVoice />
+            <SiteVoice openSignIn={openSignIn} />
         </main>
     );
 }
