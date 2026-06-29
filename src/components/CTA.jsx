@@ -9,7 +9,7 @@ function CTA() {
           Ready to speak to 1.2 billion hearts?
         </h2>
         <a
-          href="https://inkaai.com/studio"
+          href="https://inkaai.com"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block group relative overflow-hidden bg-primary-blue text-white px-12 py-6 font-button text-button uppercase tracking-widest transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue focus-visible:ring-offset-2"
