@@ -1,24 +1,35 @@
-export const services = [
-  {
-    numeral: 'I.',
-    title: 'AI Dubbing',
-    description:
-      'High-fidelity, multilingual voice matching that keeps your original performance. Speak to audiences in Hindi, Tamil, Telugu, Bengali, and more.',
-    delay: 0,
-  },
-  {
-    numeral: 'II.',
-    title: 'Voice Preservation',
-    description:
-      'Build your own digital voice vault. Our engine locks in your voice profile, cadence, and unique personality, securing your voice identity.',
-    delay: 100,
-  },
-  {
-    numeral: 'III.',
-    title: 'Content Expansion',
-    description:
-      "Upload once and automatically adapt your formats for India's diverse regions. Scale your vlogs, podcasts, or educational channels seamlessly.",
-    delay: 200,
-    hasBottomBorder: true,
-  },
-];
+export const servicesData = {
+  voiceAI: [
+    {
+      numeral: 'I.',
+      title: 'AI Dubbing',
+      description:
+        "High-fidelity multilingual voice dubbing that preserves the creator's original performance, emotion, and authenticity.",
+      delay: 0,
+    },
+    {
+      numeral: 'II.',
+      title: 'Voice Preservation',
+      description:
+        "Secure voice cloning that captures your voice profile, cadence, and personality for consistent multilingual content.",
+      delay: 100,
+    },
+  ],
+  creatorAI: [
+    {
+      numeral: 'III.',
+      title: 'AI Avatars',
+      description:
+        "Generate lifelike AI avatars that speak naturally in multiple Indian languages using your cloned voice, enabling creators and businesses to produce engaging videos without recording every language separately.",
+      delay: 200,
+    },
+    {
+      numeral: 'IV.',
+      title: 'Content Expansion',
+      description:
+        "Expand your reach across India's language ecosystem by localizing videos, podcasts, educational content, and digital experiences.",
+      delay: 300,
+      hasBottomBorder: true,
+    },
+  ],
+};
