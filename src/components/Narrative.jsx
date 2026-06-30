@@ -11,7 +11,7 @@ const featureIcons = {
 
 function Narrative() {
   return (
-    <section id="philosophy" className="py-section-gap bg-dark-navy text-white overflow-hidden">
+    <section id="philosophy" className="py-section-gap bg-dark-navy text-white overflow-hidden scroll-mt-24">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="grid md:grid-cols-12 gap-gutter mb-24 items-start">
           <RevealOnScroll className="md:col-span-5">

@@ -3,7 +3,7 @@ import RevealOnScroll from './RevealOnScroll';
 
 function CTA() {
   return (
-    <section id="tools" className="py-section-gap bg-soft-blue text-center" aria-labelledby="cta-heading">
+    <section id="tools" className="py-section-gap bg-soft-blue text-center scroll-mt-24" aria-labelledby="cta-heading">
       <RevealOnScroll className="max-w-3xl mx-auto px-margin-mobile">
         <h2 id="cta-heading" className="font-display-lg text-headline-lg-mobile md:text-headline-lg text-dark-navy mb-12 italic leading-tight">
           Ready to speak to 1.2 billion hearts?

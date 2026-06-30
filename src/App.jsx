@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,7 +12,7 @@ function App() {
   const openSignIn = () => setIsSignInOpen(true);
 
   return (
-    <Router>
+    <>
       <Navbar openSignIn={openSignIn} />
       <Routes>
         <Route path="/" element={<Home openSignIn={openSignIn} />} />
@@ -21,7 +21,7 @@ function App() {
       </Routes>
       <Footer />
       <SignInModal isOpen={isSignInOpen} onClose={() => setIsSignInOpen(false)} />
-    </Router>
+    </>
   );
 }
 

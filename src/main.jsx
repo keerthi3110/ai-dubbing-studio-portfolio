@@ -7,9 +7,13 @@ import '@fontsource/hanken-grotesk/500.css';
 import '@fontsource/hanken-grotesk/600.css';
 import App from './App';
 import './styles/globals.css';
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-  </StrictMode>
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+</StrictMode>
 );
+

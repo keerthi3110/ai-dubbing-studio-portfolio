@@ -10,7 +10,7 @@ function ToolsDropdown() {
   const isTouchRef = useRef(false);
 
   const dropdownItems = [
-    { label: 'SiteVoice', href: '#sitevoice', local: true },
+    { label: 'SiteVoice', href: '/#sitevoice', local: true },
     { label: 'Comment Analyzer', href: 'https://inkaai.com/comment-analyzer' },
     { label: 'Reach Calculator', href: 'https://inkaai.com/reach-calculator' },
   ];

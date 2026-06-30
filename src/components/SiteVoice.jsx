@@ -2,7 +2,7 @@ import RevealOnScroll from './RevealOnScroll';
 
 function SiteVoice({ openSignIn }) {
   return (
-    <section id="sitevoice" className="py-24 md:py-[120px] bg-white text-dark-navy border-t border-border-gray/20" aria-labelledby="sitevoice-heading">
+    <section id="sitevoice" className="py-24 md:py-[120px] bg-white text-dark-navy border-t border-border-gray/20 scroll-mt-24" aria-labelledby="sitevoice-heading">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
         
         {/* Eyebrow & Hero Grid */}

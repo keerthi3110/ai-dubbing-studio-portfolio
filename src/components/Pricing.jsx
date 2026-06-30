@@ -2,7 +2,7 @@ import RevealOnScroll from './RevealOnScroll';
 
 function Pricing({ openSignIn }) {
   return (
-    <section id="pricing" className="py-24 md:py-[100px] md:pt-[120px] md:pb-[100px] bg-[#F7F7F7]" aria-labelledby="pricing-heading">
+    <section id="pricing" className="py-24 md:py-[100px] md:pt-[120px] md:pb-[100px] bg-[#F7F7F7] scroll-mt-24" aria-labelledby="pricing-heading">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
         {/* Header */}
         <RevealOnScroll className="mb-16">
