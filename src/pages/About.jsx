@@ -292,7 +292,7 @@ function About() {
               }
             ].map((voiceCard, index) => (
               <RevealOnScroll key={voiceCard.title} delay={index * 100}>
-                <div className="bg-slate border border-white/5 p-6 rounded-xl flex flex-col justify-between h-full hover:border-primary-blue/30 hover:bg-slate/85 transition-all duration-300 group">
+                <div className="bg-slate border border-white/5 p-6 rounded-xl flex flex-col justify-between h-full hover:border-primary-blue/30 transition-all duration-300 group">
                   <div>
                     <div className="w-10 h-10 bg-primary-blue/10 rounded-lg flex items-center justify-center mb-6 text-primary-blue text-xl group-hover:scale-110 transition-transform">
                       {voiceCard.icon}
@@ -410,7 +410,7 @@ function About() {
               }
             ].map((benefit, index) => (
               <RevealOnScroll key={benefit.title} delay={index * 100}>
-                <div className="bg-off-white dark:bg-slate/40 border border-border-gray/30 dark:border-slate-800/60 p-8 rounded-xl flex items-start gap-4 hover:border-primary-blue/35 dark:hover:border-primary-blue/35 hover:bg-white dark:hover:bg-slate transition-all duration-300 h-full">
+                <div className="bg-off-white dark:bg-slate/40 border border-border-gray/30 dark:border-slate-800/60 p-8 rounded-xl flex items-start gap-4 hover:border-primary-blue/35 dark:hover:border-primary-blue/35 transition-all duration-300 h-full">
                   <div className="w-10 h-10 bg-soft-blue dark:bg-primary-blue/15 rounded-lg flex items-center justify-center text-primary-blue text-xl flex-shrink-0">
                     {benefit.icon}
                   </div>

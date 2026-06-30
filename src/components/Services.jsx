@@ -79,7 +79,7 @@ function Services() {
                   <RevealOnScroll
                     key={service.title}
                     delay={service.delay}
-                    className="group border-t border-border-gray py-12 hover:bg-soft-blue/30 transition-colors duration-500"
+                    className="group border-t border-border-gray py-12 transition-colors duration-500"
                   >
                     <div className="grid md:grid-cols-12 items-center gap-gutter">
                       <div className="md:col-span-1 font-display-lg text-headline-md text-muted-text/30 italic group-hover:text-primary-blue transition-colors">
@@ -114,7 +114,7 @@ function Services() {
                     onMouseEnter={service.title === 'AI Avatars' ? () => setIsAvatarHovered(true) : undefined}
                     onMouseLeave={service.title === 'AI Avatars' ? () => setIsAvatarHovered(false) : undefined}
                     onClick={service.title === 'AI Avatars' ? () => setIsAvatarClicked(!isAvatarClicked) : undefined}
-                    className={`group border-t border-border-gray py-12 hover:bg-soft-blue/30 transition-colors duration-500 ${
+                    className={`group border-t border-border-gray py-12 transition-colors duration-500 ${
                       service.title === 'AI Avatars' ? 'cursor-pointer select-none' : ''
                     }${service.hasBottomBorder ? ' border-b border-border-gray' : ''}`}
                   >

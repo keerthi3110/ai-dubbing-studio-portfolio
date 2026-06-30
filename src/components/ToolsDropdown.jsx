@@ -166,7 +166,7 @@ function ToolsDropdown() {
                       }
                     }
                   }}
-                  className="block px-6 py-3.5 font-button text-button uppercase tracking-widest text-body-text dark:text-muted-text hover:text-primary-blue hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors duration-200 first:rounded-t-xl last:rounded-b-xl"
+                  className="block px-6 py-3.5 font-button text-button uppercase tracking-widest text-body-text dark:text-muted-text hover:text-primary-blue transition-colors duration-200 first:rounded-t-xl last:rounded-b-xl"
                 >
                   {item.label}
                 </a>
@@ -180,7 +180,7 @@ function ToolsDropdown() {
                 rel="noopener noreferrer"
                 role="menuitem"
                 onClick={() => setIsOpen(false)}
-                className="block px-6 py-3.5 font-button text-button uppercase tracking-widest text-body-text dark:text-muted-text hover:text-primary-blue hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors duration-200 first:rounded-t-xl last:rounded-b-xl"
+                className="block px-6 py-3.5 font-button text-button uppercase tracking-widest text-body-text dark:text-muted-text hover:text-primary-blue transition-colors duration-200 first:rounded-t-xl last:rounded-b-xl"
               >
                 {item.label}
               </a>
